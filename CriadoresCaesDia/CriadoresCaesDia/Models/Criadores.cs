@@ -10,6 +10,12 @@ namespace CriadoresCaesDia.Models
     /// </summary>
     public class Criadores
     {
+        
+        public Criadores() {
+            // inicializar a lista de cães do criador
+            ListadeCaes = new HashSet<CriadoresCaes>();
+        }
+
         /// <summary>
         /// Identificador de cada Criador
         /// </summary>
@@ -43,6 +49,14 @@ namespace CriadoresCaesDia.Models
         /// Email do Criador
         /// </summary>
         public string Email { get; set; }
+
+        // ###########################################
+
+        // lista de Cães associados ao Criador
+        /// <summary>
+        /// lista de cães associados ao criador
+        /// </summary>        
+        public ICollection<CriadoresCaes> ListadeCaes { get; set; }
 
     }
 }
