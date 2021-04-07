@@ -22,35 +22,39 @@ namespace CriadoresCaesDia.Models
         /// </summary>
         [Key] // identifica este atributo como chave primária
         public int Id { get; set; }
+        
         /// <summary>
         /// Nome do criador
         /// </summary>
-        
+        [Required]
         public string Nome { get; set; }
+        
         /// <summary>
         /// Nome Comercial do criador
         /// </summary>
-        
         public string NomeComercial { get; set; }
+
         /// <summary>
         /// Morada do Criador
         /// </summary>
-        
+        [Required] 
         public string morada { get; set; }
+
         /// <summary>
         /// Código Postal da morada do criador
         /// </summary>
-        
+        [Required]
         public string CodPostal { get; set; }
+        
         /// <summary>
         /// número de telemóvel do criador
         /// </summary>
-        public string Telemóvel { get; set; }
+        public string Telemóvel { get; set; } // ou se escreve o telemóvel ou email ou os dois
 
         /// <summary>
         /// Email do Criador
         /// </summary>
-        public string Email { get; set; }
+        public string Email { get; set; } // ou se escreve o telemóvel ou email ou os dois
 
         // ###########################################
 
