@@ -7,7 +7,7 @@ namespace CriadoresCaesDia.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AlterColumn<string>(
-                name: "morada",
+                name: "Morada",
                 table: "Criadores",
                 type: "nvarchar(max)",
                 nullable: false,
@@ -40,7 +40,7 @@ namespace CriadoresCaesDia.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AlterColumn<string>(
-                name: "morada",
+                name: "Morada",
                 table: "Criadores",
                 type: "nvarchar(max)",
                 nullable: true,

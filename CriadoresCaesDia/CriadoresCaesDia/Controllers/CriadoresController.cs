@@ -54,7 +54,7 @@ namespace CriadoresCaesDia.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,NomeComercial,morada,CodPostal,Telemóvel,Email")] Criadores criadores)
+        public async Task<IActionResult> Create([Bind("Id,Nome,NomeComercial,Morada,CodPostal,Telemovel,Email")] Criadores criadores)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace CriadoresCaesDia.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,NomeComercial,morada,CodPostal,Telemóvel,Email")] Criadores criadores)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,NomeComercial,Morada,CodPostal,Telemovel,Email")] Criadores criadores)
         {
             if (id != criadores.Id)
             {

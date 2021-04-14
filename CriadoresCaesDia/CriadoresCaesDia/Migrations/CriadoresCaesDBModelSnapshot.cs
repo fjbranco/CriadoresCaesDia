@@ -69,10 +69,10 @@ namespace CriadoresCaesDia.Migrations
                     b.Property<string>("NomeComercial")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Telemóvel")
+                    b.Property<string>("Telemovel")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("morada")
+                    b.Property<string>("Morada")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
