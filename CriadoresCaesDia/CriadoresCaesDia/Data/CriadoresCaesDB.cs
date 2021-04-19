@@ -16,7 +16,7 @@ namespace CriadoresCaesDia.Data {
         public CriadoresCaesDB(DbContextOptions<CriadoresCaesDB> options):base(options) {
 
         }
-
+        
         protected override void OnModelCreating(ModelBuilder modelBuilder) {
 
             base.OnModelCreating(modelBuilder);
@@ -93,7 +93,7 @@ namespace CriadoresCaesDia.Data {
             );
 
         }
-
+        
 
         // Representar as Tabelas da BD
         public DbSet<Criadores> Criadores { get; set; }

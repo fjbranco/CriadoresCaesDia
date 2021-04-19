@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace CriadoresCaesDia.Migrations
 {
-    public partial class inicio : Migration
+    public partial class Inicial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -13,12 +13,12 @@ namespace CriadoresCaesDia.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nome = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    NomeComercial = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    morada = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CodPostal = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Telemóvel = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Nome = table.Column<string>(type: "nvarchar(60)", maxLength: 60, nullable: false),
+                    NomeComercial = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: true),
+                    Morada = table.Column<string>(type: "nvarchar(70)", maxLength: 70, nullable: false),
+                    CodPostal = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
+                    Telemovel = table.Column<string>(type: "nvarchar(14)", maxLength: 14, nullable: true),
+                    Email = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true)
                 },
                 constraints: table =>
                 {

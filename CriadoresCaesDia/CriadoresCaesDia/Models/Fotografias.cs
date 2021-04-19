@@ -26,6 +26,7 @@ namespace CriadoresCaesDia.Models
         /// <summary>
         /// Data da fotografia
         /// </summary>
+        //[Display(Name ="")]
         public DateTime DataFoto { get; set; }
 
         /// <summary>

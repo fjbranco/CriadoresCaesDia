@@ -62,7 +62,7 @@ namespace CriadoresCaesDia.Models
         /// </summary>
         [StringLength(14, MinimumLength =9,ErrorMessage ="Introduza o {0} com {1} dígitos, por favor!")]
         [RegularExpression("((00)?([0-9]{2,3})[1-9][0-9]{8})", ErrorMessage ="Escreva por favor um número de {0} válido com 9 algarismos. Se quiseres poder pode acrescentar o indicativo nacional e internacional.")]
-        [Display(Name = "Telemovel")]
+        [Display(Name = "Telemóvel")]
         public string Telemovel { get; set; } // ou se escreve o telemóvel ou email ou os dois
 
         /// <summary>
