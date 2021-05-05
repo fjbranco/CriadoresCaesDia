@@ -41,6 +41,7 @@ namespace CriadoresCaesDia.Models
         /// FK para os Caes da Fotografia
         /// </summary>
         [ForeignKey(nameof(Cao))]
+        [Display(Name ="Cão")]
         public int CaoFK { get; set; }
         public Caes Cao { get; set; }
 
