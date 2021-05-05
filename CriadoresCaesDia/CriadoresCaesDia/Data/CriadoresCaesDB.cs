@@ -101,5 +101,6 @@ namespace CriadoresCaesDia.Data {
         public DbSet<Racas> Racas { get; set; }
         public DbSet<Fotografias> Fotografias { get; set; }
         public DbSet<CriadoresCaes> CriadoresCaes { get; set; }
+        public DbSet<Veterinarios> Veterinarios { get; set; }
     }
 }
