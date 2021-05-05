@@ -27,6 +27,19 @@ namespace CriadoresCaesDia
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            // *************************************************
+            // uso de vars. de sessão
+            // *************************************************
+            services.AddDistributedMemoryCache();
+            services.AddSession(options => {
+                options.IdleTimeout = TimeSpan.FromSeconds(1200);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
+            // *************************************************
+
+
             services.AddControllersWithViews();
 
             // *************************************************
@@ -56,6 +69,12 @@ namespace CriadoresCaesDia
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            // *************************************************
+            // permitir o uso de vars. de sessão
+            // *************************************************
+            app.UseSession();
+            // *************************************************
 
             app.UseAuthorization();
 
